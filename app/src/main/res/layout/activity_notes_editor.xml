@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NotesEditorActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/notesEditor_backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/grey"
+            android:src="@drawable/back_button_icon" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/notesEditor_editButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:backgroundTint="@android:color/transparent"
+                android:src="@drawable/edit_icon" />
+
+            <ImageButton
+                android:id="@+id/notesEditor_shareButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:backgroundTint="@android:color/transparent"
+                android:src="@drawable/share_icon" />
+            <ImageButton
+                android:id="@+id/notesEditor_saveButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:backgroundTint="@android:color/transparent"
+                android:src="@drawable/save_icon" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColorHighlight="@color/yellow_note_dull"
+        android:textColorHint="@color/yellow_note"
+        android:textColorLink="@color/yellow_note"
+        app:hintTextColor="@color/yellow_note"
+        app:boxStrokeColor="@color/yellow_note"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/notesEditor_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textSize="17dp"
+            android:textColorHighlight="@color/yellow_note_dull"
+            android:textCursorDrawable="@drawable/curson_shape"
+            android:enabled="false"
+            android:textColor="@color/black"
+            android:hint="  Write Notes Title Here..."
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:screenReaderFocusable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
+        app:layout_constraintVertical_bias="0.018"
+        android:layout_marginBottom="10dp"
+        android:fillViewport="true">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:layout_marginEnd="1dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:boxStrokeColor="@color/yellow_note"
+            android:textColorHint="@color/yellow_note"
+            android:textColorLink="@color/yellow_note"
+            app:hintTextColor="@color/yellow_note"
+            android:isScrollContainer="true"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
+            app:layout_constraintVertical_bias="0.018">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/notesEditor_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:textColorHighlight="@color/yellow_note_dull"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/black"
+                app:textInputLayoutFocusedRectEnabled="false"
+                android:gravity="start"
+                android:textCursorDrawable="@drawable/curson_shape"
+                android:enabled="false"
+                android:textSize="17dp"
+                android:hint="  Writes Your Notes Here.."/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
