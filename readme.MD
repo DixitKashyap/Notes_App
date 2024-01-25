@@ -11,6 +11,8 @@ width=45% height=30%/>
 width=45% height=30%/>
 <img src = "https://github.com/DixitKashyap/Notes_App/blob/main/Screenshots/3.jpg"
 width=45% height=30%/>
+</br>
+
 <b> Features : </b>
 <ul>
 <li>Creating Notes
