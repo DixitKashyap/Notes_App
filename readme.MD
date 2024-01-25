@@ -5,11 +5,11 @@
 <b>A Simple Notes App that can be used to create notes,read them and edit them.</b><br>
 
 <b>Screenshots Of Notes App : </br>
-<img src ="https://github.com/DixitKashyap/MyNotesApp/blob/main/Screenshots/1.jpg"
+<img src ="https://github.com/DixitKashyap/Notes_App/blob/main/Screenshots/1.jpg"
 width=45% height=30%/>
-<img src = "https://github.com/DixitKashyap/MyNotesApp/blob/main/Screenshots/2.jpg"
+<img src = "https://github.com/DixitKashyap/Notes_App/blob/main/Screenshots/2.jpg"
 width=45% height=30%/>
-<img src = "https://github.com/DixitKashyap/MyNotesApp/blob/main/Screenshots/3.jpg"
+<img src = "https://github.com/DixitKashyap/Notes_App/blob/main/Screenshots/3.jpg"
 width=45% height=30%/>
 <b> Features : </b>
 <ul>
